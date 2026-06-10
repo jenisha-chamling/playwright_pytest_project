@@ -10,7 +10,7 @@ It is built using Playwright (Python) and Pytest to validate form functionality,
  Git & GitHub, 
  pytest-html (for reporting)
 
-Features / Test Coverage
+## Features / Test Coverage
 -URL validation,
  Page title verification,
  Form field visibility check,
@@ -19,7 +19,7 @@ Features / Test Coverage
  Input field validation,
  HTML report generation
 
-Project Structure:
+## Project Structure:
 
 tests/        -> contains Playwright test cases (test.py),
 
@@ -35,7 +35,7 @@ Backend Files:
  
  database.php -> Handles database connection and inserts form data into MySQL database
 
-How to run
+## How to run
 1. Clone the repository:
    git clone <your-repo-link>
 
