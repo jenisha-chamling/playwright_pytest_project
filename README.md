@@ -22,11 +22,17 @@ Features / Test Coverage
 Project Structure:
 
 tests/        -> contains Playwright test cases (test.py),
+
  assets/       -> contains CSS file,
+ 
  reports/      -> HTML test reports generated after execution,
+ 
  venv/         -> virtual environment (not pushed to GitHub),
+ 
 Backend Files:
+
  index.php -> Contains Student Registration form UI and form validation logic,
+ 
  database.php -> Handles database connection and inserts form data into MySQL database
 
 How to run
