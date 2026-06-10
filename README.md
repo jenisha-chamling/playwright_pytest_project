@@ -2,7 +2,7 @@
 This project is an automated UI testing framework for a PHP-based Student Registration System running on a local server.
 It is built using Playwright (Python) and Pytest to validate form functionality, UI elements, and backend responses.
 
-Technologies Used
+## Technologies Used
 -Playwright (Python),
  Pytest, 
  HTML (Frontend),
