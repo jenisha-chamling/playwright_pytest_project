@@ -52,4 +52,8 @@ Backend Files:
    pytest tests/
 
 6. Generate HTML report:
-   pytest tests/ --html=reports/report.html --self-contained-html
+   step1: pip install pytest-html
+   step2: mkdir reports (create folder named reports)
+   
+   step3: pytest --html=reports/report.html --self-contained-html (to run all tests)
+   step4: pytest tests/test_index.py --html=reports/report.html --self-contained-html (to run only test_index.py)

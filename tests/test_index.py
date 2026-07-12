@@ -102,6 +102,23 @@ def test_input_values(page: Page):
     expect(page.locator("input[name='first']")).to_have_value("John")
 
 
+def test_gender_radio_buttons(page: Page):
+    page.goto("http://localhost/php_practice/index.php")
+
+    male = page.locator("#male")
+    female = page.locator("#female")
+
+    male.check()
+
+    expect(male).to_be_checked()
+    expect(female).not_to_be_checked()
+
+    female.check()
+
+    expect(female).to_be_checked()
+    expect(male).not_to_be_checked()
+    page.wait_for_timeout(2000) #for debugging
+
 
 
     
