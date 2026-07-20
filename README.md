@@ -34,6 +34,19 @@ Manual testing was performed by designing and executing test cases covering func
 - UI Testing
 - Database Verification
 - Regression Testing
+---
+## Student_Registration_System_QA_test_documentation.xlsx
+- Test case ID (TC ID)
+- Module
+- Test Type
+- Test Case
+- Preconditions
+- Test Scenario
+- Test Data
+- Expested Result
+- Actual Result
+- Status
+- Priority
 
 ### Automation Testing
 
