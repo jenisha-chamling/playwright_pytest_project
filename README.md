@@ -1,59 +1,124 @@
-# Student Registration System – UI Automation Testing
-This project is an automated UI testing framework for a PHP-based Student Registration System running on a local server.
-It is built using Playwright (Python) and Pytest to validate form functionality, UI elements, and backend responses.
+# Student Registration System – QA Testing Project
+
+## Project Overview
+
+This project demonstrates both **manual** and **automated UI testing** of a PHP-based Student Registration System running on a local server. The application allows users to register students by entering personal details, validating inputs, and storing records in a MySQL database.
+
+Manual testing was performed by designing and executing test cases covering functional, validation, positive, negative, smoke, regression, UI, and database verification scenarios. Selected test scenarios were automated using Playwright with Python and Pytest.
+
+---
 
 ## Technologies Used
--Playwright (Python),
- Pytest, 
- HTML (Frontend),
- PHP (Backend),
- Git & GitHub, 
- pytest-html (for reporting)
 
-## Features / Test Coverage
--URL validation,
- Page title verification,
- Form field visibility check,
- Positive testing (successful form submission),
- Negative testing (empty form validation),
- Input field validation,
- HTML report generation
+- Playwright (Python)
+- Pytest
+- PHP
+- HTML
+- MySQL
+- XAMPP
+- Git & GitHub
+- pytest-html
 
-## Project Structure:
+---
 
-tests/        -> contains Playwright test cases (test.py),
+## Test Coverage
 
- assets/       -> contains CSS file,
- 
- reports/      -> HTML test reports generated after execution,
- 
- venv/         -> virtual environment (not pushed to GitHub),
- 
-Backend Files:
+### Manual Testing
 
- index.php -> Contains Student Registration form UI and form validation logic,
- 
- database.php -> Handles database connection and inserts form data into MySQL database
+- Smoke Testing
+- Functional Testing
+- Positive Testing
+- Negative Testing
+- Validation Testing
+- Boundary Value Testing
+- UI Testing
+- Database Verification
+- Regression Testing
 
-## How to run
-1. Clone the repository:
-   git clone <your-repo-link>
+### Automation Testing
 
-2. Navigate to project directory:
-   cd playwright_project
+- URL Verification
+- Page Title Verification
+- Form Field Visibility
+- Successful Form Submission
+- Empty Form Validation
+- Input Field Validation
+- HTML Test Report Generation
 
-3. Install dependencies:
-   pip install -r requirements.txt
+---
 
-4. Install Playwright browsers:
-   playwright install
+---
 
-5. Run test cases:
-   pytest tests/
+## Backend Files
 
-6. Generate HTML report:
-   step1: pip install pytest-html
-   step2: mkdir reports (create folder named reports)
-   
-   step3: pytest --html=reports/report.html --self-contained-html (to run all tests)
-   step4: pytest tests/test_index.py --html=reports/report.html --self-contained-html (to run only test_index.py)
+### `index.php`
+
+- Student Registration Form
+- Input Validation
+- Form Submission
+- Data Processing
+
+### `database.php`
+
+- Database Connection
+- Student Data Insertion into MySQL
+
+---
+
+## How to Run
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/your-repository.git
+```
+
+### 2. Navigate to the Project Directory
+
+```bash
+cd Student-Registration-System-QA
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Install Playwright Browsers
+
+```bash
+playwright install
+```
+
+### 5. Run All Test Cases
+
+```bash
+pytest tests/
+```
+
+### 6. Generate HTML Test Report
+
+```bash
+pytest --html=reports/report.html --self-contained-html
+```
+
+### 7. Run a Specific Test File
+
+```bash
+pytest tests/test_index.py --html=reports/report.html --self-contained-html
+```
+
+---
+
+## Test Reports
+
+HTML execution reports are generated using **pytest-html** and are saved in the `reports/` directory.
+
+---
+
+## Author
+
+**Jenisha Rai**
+
+
